@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<br />
+<hr />
+
+@using (Html.BeginForm("SumNum", "Home", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col">
+            <input type="text" id="firstNumber" name="firstNumber" />
+        </div>
+        <div class="col">
+            <input type="text" id="secondNumber" name="secondNumber" />
+        </div>
+    </div>
+    <div class="row">
+        <input class="btn btn-primary" type="submit" value="Enviar" />
+    </div>
+    
+}   
