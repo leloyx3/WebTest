@@ -6,6 +6,31 @@
     ViewBag.Title = "Resultado";
 }
 
-<h2>Resultado</h2>
-<br />
-@Model.Sumatoria
+
+
+<div row>
+    <div class="col-md mx-auto">
+
+        <div class="card-header text-center">
+            RESULTADO
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md">
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <h2 class="text-center">@Model.Sumatoria</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

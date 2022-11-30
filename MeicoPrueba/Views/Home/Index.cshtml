@@ -12,16 +12,46 @@
 
 @using (Html.BeginForm("SumNum", "Home", FormMethod.Post))
 {
-    <div class="row">
-        <div class="col">
-            <input type="text" id="firstNumber" name="firstNumber" />
-        </div>
-        <div class="col">
-            <input type="text" id="secondNumber" name="secondNumber" />
+    <div row>
+        <div class="col-md mx-auto">
+
+            <div class="card-header text-center">
+                SUMATORIA DE NÚMEROS
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="firstNumber">Digite número</label>
+                                        <input type="text" class="form-control" id="firstNumber" name="firstNumber" placeholder="Digite un numero" maxlength="10" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="secondNumber">Digite número</label>
+                                        <input type="text" class="form-control" id="secondNumber" name="secondNumber" placeholder="Digite un numero" maxlength="10" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <div class="row">
+                <div class="col text-center">
+                    <input class="btn btn-primary" type="submit" value="Enviar" />
+                </div>
+
+            </div>
+
         </div>
     </div>
-    <div class="row">
-        <input class="btn btn-primary" type="submit" value="Enviar" />
-    </div>
-    
 }   
